@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+body {
+  font-family: "Lato", "sans-serif";
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+}
+
+/* navbar  */
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  padding: 0 20px;
+}
+.navbar .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.navbar nav ul {
+  display: flex;
+  font-size: 19px;
+  padding: 10px;
+}
+.navbar li {
+  margin: 0 10px;
+}
+.navbar a {
+  padding: 5px 0;
+}
+
+.navbar a:hover {
+  border-bottom: 1px solid white;
+}
+
+/* showcase */
+.showcase-container {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+.showcase-container .container {
+  gap: 20px;
+  align-items: center;
+}
+.showcase-text {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+}
+.showcase-text h1 {
+  font-size: 50px;
+}
+button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  border: 1px solid white;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+button:hover {
+  transform: scale(0.95);
+}
+
+.form-container {
+  background-color: white;
+  width: 400px;
+  position: relative;
+  bottom: -70px;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 0 20px;
+  margin-left: auto;
+}
+form h1 {
+  font-size: 30px;
+  color: #333;
+}
+form input {
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 20px;
+  padding: 5px;
+}
+input:focus {
+  outline: none;
+}
+form button {
+  margin-top: 0;
+  width: 100px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/* stats */
+.stats {
+  padding-top: 150px;
+}
+.stats .container {
+  flex-direction: column;
+  gap: 30px;
+}
+.stats-heading {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.grid div {
+  text-align: center;
+}
+.grid div i {
+  margin-bottom: 10px;
+  font-size: 80px;
+}
+.grid div h3 {
+  font-size: 25px;
+}
+.text-secondary {
+  font-size: 30px;
+}
+
+/* cli  */
+.cli {
+  margin-top: 60px;
+}
+.grid2 {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 20px;
+  gap: 20px;
+}
+.grid2 .image-container {
+  grid-row: span 2;
+}
+
+.grid2 div:not(.image-container) {
+  padding: 20px;
+}
+.grid2 h1 {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  width: 70%;
+}
+
+/* cloud hosting */
+.cloud-hosting-container {
+  color: white;
+  background-color: var(--primary-color);
+  margin-top: 60px;
+  padding: 20px;
+}
+.cloud-hosting-container .container {
+  gap: 20px;
+  align-items: center;
+}
+.cloud-hosting-container .image-container {
+  width: 500px;
+}
+.cloud-hosting-text {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+.cloud-hosting-text h1 {
+  font-size: 40px;
+}
+.cloud-hosting-text p {
+  font-size: 20px;
+}
+
+.cloud-hosting-text button {
+  background-color: var(--dark-color);
+  border: none;
+  text-align: center;
+  font-size: 19px;
+}
+
+/* languages */
+.languages {
+  margin-top: 60px;
+}
+.languages .container {
+  flex-direction: column;
+  gap: 20px;
+}
+.languages .container h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+}
+
+.languages-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.languages-container div {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  align-items: center;
+  width: 130px;
+  font-size: 18px;
+}
+.languages-container img {
+  width: 100px;
+}
+
+/* footer  */
+.footer {
+  background-color: var(--dark-color);
+  margin-top: 60px;
+  color: white;
+  height: 200px;
+}
+.footer .container {
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.social a {
+  margin: 10px;
+}
+.features img {
+  width: 200px;
+}
+.features {
+  justify-content: space-between;
+}
+.features-2 {
+  justify-content: space-between;
+  background-color: var(--light-color);
+}
+.features-2 h1,
+.features-2 p {
+  color: var(--dark-color);
+}
+
+/* docs */
+main a {
+  color: var(--dark-color);
+  display: block;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.main {
+  margin-top: 60px;
+}
+.main .container {
+  gap: 20px;
+}
+.sidebar {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+  background-color: var(--light-color);
+  padding: 20px;
+  align-self: flex-start;
+  width: 600px;
+}
+.essential a:last-child {
+  margin-bottom: 40px;
+}
+.essential h2,
+.deployment h2 {
+  margin-bottom: 20px;
+}
+.details {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+  padding: 20px;
+}
+
+.install p {
+  background-color: #333;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details div {
+  margin-bottom: 20px;
+}
+.lorem i {
+  display: inline-block;
+  margin-right: 5px;
+}
+.lorem p {
+  background-color: var(--success-color);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+.lorem button {
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+}
